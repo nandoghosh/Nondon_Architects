@@ -20,6 +20,7 @@ main {
     flex-direction: column;
     align-items: center;
 }
+
 /* Nav Part Start */
 
 nav {
@@ -58,6 +59,7 @@ nav ul li {
     align-items: center;
     text-align: center;
     margin-top: 50px;
+    margin-bottom: 85px;
 }
 
 .banner-title {
@@ -74,7 +76,8 @@ nav ul li {
     margin-bottom: 30px;
 }
 
-.banner-button {
+.banner-button,
+.feature-button {
     color: #FFFFFF;
     background-color: #FF900E;
     padding: 20px 25px;
@@ -92,13 +95,141 @@ nav ul li {
 
 /* Banner Part End */
 
+/* Features Part Start */
+
+.features {
+    display: flex;
+    align-items: center;
+    gap: 76px;
+}
+
+.pictures {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-column-gap: 24px;
+    grid-row-gap: 24px;
+}
+
+.feature-title {
+    width: 470px;
+    font-size: 45px;
+    font-weight: 700;
+    margin-bottom: 24px;
+}
+
+.feature-title .list {
+    color: #727272;
+}
+
+.feature-title .our {
+    color: #131313;
+}
+
+.feature-title .feature {
+    color: #FF900E;
+}
+
+.feature-description {
+    width: 540px;
+    color: #727272;
+    font-size: 16px;
+    margin-bottom: 34px;
+}
+
+/* Features Part End */
+hr {
+    width: 5px;
+    height: 106px;
+    border: none;
+    background-color: #FF900E;
+}
+
+.love-enjoy {
+    display: flex;
+    gap: 50px;
+    margin-top: 120px;
+}
+
+.love-enjoy img {
+    height: 980px;
+    width: 700px;
+}
+
+/* .love{
+    margin-top: 50px;
+} */
+.love-info {
+    display: flex;
+    gap: 20px;
+}
+
+.love-title {
+    width: 468px;
+    color: #131313;
+    font-size: 45px;
+    font-weight: 700;
+    margin-bottom: 24px;
+}
+
+.love-description {
+    width: 586px;
+    color: #727272;
+    font-size: 16px;
+    margin-bottom: 30px;
+}
+.enjoy-items{
+    display: grid;
+    grid-template-columns: 1, 1fr;
+}
+.enjoy-item {
+    width: 586px;
+    border-radius: 8px;
+    padding: 40px;
+    background-color: #FFFFFF;
+    box-shadow: 0px 4px 30px 0px rgba(0, 0, 0, 0.06);
+    margin-bottom: 20px;
+}
+
+.item-title {
+    color: #131313;
+    font-size: 20px;
+    font-weight: 600;
+    margin-bottom: 15px;
+}
+
+.item-description {
+    color: #727272;
+    font-size: 16px;
+}
+
+.experience-item {
+    width: 350px;
+    border-radius: 8px;
+    text-align: center;
+    padding: 25px;
+    background: #FF900E;
+}
+
+.experience-title {
+    color: #FFFFFF;
+    font-size: 65px;
+    font-weight: 700;
+
+}
+
+.experience-description {
+    color: #FFFFFF;
+    font-size: 25px;
+    font-weight: 500;
+}
+
 /* Footer Part Start */
-footer{
+footer {
     display: flex;
     flex-direction: column;
     width: 80%;
     height: 100px;
-    margin:  auto;
+    margin: auto;
     justify-content: center;
     align-items: center;
     text-align: center;
@@ -107,15 +238,18 @@ footer{
     margin-top: 100px;
     margin-bottom: 50px;
 }
-footer p{
+
+footer p {
     font-size: 20px;
     color: #424242;
 }
-.icon{
+
+.icon {
     display: flex;
     gap: 30px;
     margin-top: 20px;
 }
+
 /* Footer Part End */
 
 /* Mobile Screen Start */
@@ -126,20 +260,47 @@ footer p{
         padding: 30px 10px;
         gap: 30px;
     }
-.banner{
-    padding: 0px 20px;
-}
+
+    .banner {
+        padding: 0px 20px;
+    }
+
     .header-title {
         font-size: 35px;
     }
+
     .banner-title {
         font-size: 35px;
     }
-    .banner img{
+
+    .banner img {
         width: 100%;
     }
-    footer p{
+
+    .features {
+        flex-direction: column-reverse;
+        text-align: center;
+    }
+
+    .pictures {
+        grid-template-columns: repeat(1, 1fr);
+    }
+
+    .feature-title {
+        font-size: 25px;
+    }
+
+    .feature-description {
+        width: 100%;
+        font-size: 12px;
+    }
+
+    footer p {
         font-size: 15px;
+    }
+
+    .love-enjoy {
+        flex-direction: column-reverse;
     }
 }
 
@@ -153,16 +314,34 @@ footer p{
         padding: 30px 20px;
         gap: 30px;
     }
-    .banner{
+
+    .banner {
         padding: 0px 20px;
     }
+
     .banner-title {
         font-size: 45px;
     }
-    .banner img{
+
+    .banner img {
         width: 100%;
     }
-    footer p{
+
+    .features {
+        flex-direction: column-reverse;
+        text-align: center;
+    }
+
+    .pictures {
+        grid-template-columns: repeat(2, 1fr);
+
+    }
+
+    .love-enjoy {
+        flex-direction: column-reverse;
+    }
+
+    footer p {
         font-size: 15px;
     }
 }
