@@ -1,10 +1,133 @@
-*{
+* {
     margin: 0px;
     padding: 0px;
 }
+
 /* Google Font Link */
 @import url('https://fonts.googleapis.com/css2?family=Work+Sans:wght@400;500;600;700&display=swap');
 
-body{
+body {
     font-family: 'Work Sans', sans-serif;
 }
+
+header {
+    background-color: #FF900E1A;
+    background-size: cover;
+}
+
+/* Nav Part Start */
+
+nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 50px 230px;
+}
+
+.header-title {
+    color: #131313;
+    font-size: 45px;
+    font-weight: 700;
+}
+
+nav ul {
+    display: flex;
+    gap: 40px;
+
+}
+
+nav ul li {
+    list-style: none;
+    color: #424242;
+    font-size: 18px;
+    font-weight: 500;
+}
+
+/* Nav Part End */
+
+/* Banner Part Start */
+
+.banner {
+    display: grid;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    margin-top: 50px;
+}
+
+.banner-title {
+    color: #131313;
+    font-size: 64px;
+    font-weight: 700;
+    margin-bottom: 20px;
+}
+
+.banner-description {
+    color: #727272;
+    font-size: 16px;
+    font-weight: 500;
+    margin-bottom: 30px;
+}
+
+.banner-button {
+    color: #FFFFFF;
+    background-color: #FF900E;
+    padding: 20px 25px;
+    font-size: 20px;
+    font-weight: 600;
+    border: none;
+    border-radius: 8px;
+    margin-bottom: 50px;
+}
+
+.banner img {
+    border-radius: 8px;
+    margin-bottom: 45px;
+}
+
+/* Banner Part End */
+
+/* Mobile Screen Start */
+
+@media screen and (max-width: 767px) {
+    nav {
+        flex-direction: column;
+        padding: 30px 10px;
+        gap: 30px;
+    }
+.banner{
+    padding: 0px 20px;
+}
+    .header-title {
+        font-size: 35px;
+    }
+    .banner-title {
+        font-size: 35px;
+    }
+    .banner img{
+        width: 100%;
+    }
+}
+
+/* Mobile Screen End */
+
+/* Tablet Screen Start */
+
+@media screen and (min-width: 768px) and (max-width: 1023px) {
+    nav {
+        flex-direction: column;
+        padding: 30px 20px;
+        gap: 30px;
+    }
+    .banner{
+        padding: 0px 20px;
+    }
+    .banner-title {
+        font-size: 45px;
+    }
+    .banner img{
+        width: 100%;
+    }
+}
+
+/* Tablet Screen End */
