@@ -277,21 +277,31 @@ hr {
 /* Some Facts Part End */
 
 /* Sponspors Part Start */
-.sponspors{
+.sponspors {
     text-align: center;
     margin-top: 100px;
 }
-.sponspor-title{
+
+.sponspor-title {
     color: #131313;
     font-size: 45px;
     font-weight: 700;
     margin-bottom: 24px;
 }
-.sponspor-description{
-    width: 540px;
+
+.sponspor-description {
+    width: 542px;
     color: #727272;
     font-size: 16px;
+    margin-bottom: 100px;
 }
+
+.sponspors-img {
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    gap: 50px;
+}
+
 /* Sponspors Part End */
 
 
@@ -367,13 +377,17 @@ footer p {
         font-size: 12px;
     }
 
+    .love-enjoy {
+        flex-direction: column-reverse;
+    }
+
     .facts-items {
         grid-template-columns: repeat(1, 1fr);
         gap: 20px;
     }
 
-    .love-enjoy {
-        flex-direction: column-reverse;
+    .sponspors-img {
+        grid-template-columns: repeat(1, 1fr);
     }
 
     footer p {
@@ -421,6 +435,10 @@ footer p {
     .facts-items {
         grid-template-columns: repeat(2, 1fr);
         gap: 20px;
+    }
+
+    .sponspors-img {
+        grid-template-columns: repeat(2, 1fr);
     }
 
     footer p {
