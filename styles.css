@@ -137,6 +137,8 @@ nav ul li {
 }
 
 /* Features Part End */
+
+/* Love and Enjoy Part Start */
 hr {
     width: 5px;
     height: 106px;
@@ -177,10 +179,12 @@ hr {
     font-size: 16px;
     margin-bottom: 30px;
 }
-.enjoy-items{
+
+.enjoy-items {
     display: grid;
     grid-template-columns: 1, 1fr;
 }
+
 .enjoy-item {
     width: 586px;
     border-radius: 8px;
@@ -206,7 +210,7 @@ hr {
     width: 350px;
     border-radius: 8px;
     text-align: center;
-    padding: 25px;
+    padding: 15px;
     background: #FF900E;
 }
 
@@ -222,6 +226,74 @@ hr {
     font-size: 25px;
     font-weight: 500;
 }
+
+/* Love And Enjoy Part End */
+
+/* Some Facts Part Start */
+.some-facts {
+    text-align: center;
+    margin-top: 100px;
+}
+
+.some-title {
+    color: #131313;
+    font-size: 45px;
+    font-weight: 700;
+    margin-bottom: 24px;
+}
+
+.some-description {
+    width: 540px;
+    color: #727272;
+    font-size: 16px;
+}
+
+.facts-items {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 120px;
+    margin-top: 100px;
+}
+
+.facts-item {
+    text-align: center;
+    border-radius: 8px;
+    border: 1px solid #FF900E;
+    padding: 50px;
+}
+
+.facts-item-title {
+    color: #424242;
+    font-size: 45px;
+    font-weight: 600;
+}
+
+.facts-item-description {
+    color: #727272;
+    font-size: 20px;
+    font-weight: 600;
+}
+
+/* Some Facts Part End */
+
+/* Sponspors Part Start */
+.sponspors{
+    text-align: center;
+    margin-top: 100px;
+}
+.sponspor-title{
+    color: #131313;
+    font-size: 45px;
+    font-weight: 700;
+    margin-bottom: 24px;
+}
+.sponspor-description{
+    width: 540px;
+    color: #727272;
+    font-size: 16px;
+}
+/* Sponspors Part End */
+
 
 /* Footer Part Start */
 footer {
@@ -295,12 +367,17 @@ footer p {
         font-size: 12px;
     }
 
-    footer p {
-        font-size: 15px;
+    .facts-items {
+        grid-template-columns: repeat(1, 1fr);
+        gap: 20px;
     }
 
     .love-enjoy {
         flex-direction: column-reverse;
+    }
+
+    footer p {
+        font-size: 15px;
     }
 }
 
@@ -339,6 +416,11 @@ footer p {
 
     .love-enjoy {
         flex-direction: column-reverse;
+    }
+
+    .facts-items {
+        grid-template-columns: repeat(2, 1fr);
+        gap: 20px;
     }
 
     footer p {
